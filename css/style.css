@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700');
+body,
+html {
+	padding: 0;
+	margin: 0;
+	font-family: 'Raleway', sans-serif;
+}
+
+body {
+	background: khaki;
+}
+
+.container {
+	width: 600px;
+	height: 200px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+input {
+	height: 40px;
+	width: 300px;
+	background: transparent;
+	outline: none;
+	border: none;
+	margin: 10px;
+	font-size: 30px;
+	font-weight: 300;
+	border-bottom: 1px solid;
+}
+
+.light input {
+	color: #000 !important;
+	border-bottom-color: rgba(0, 0, 0, 0.8);
+}
+
+.light ::placeholder {
+	/* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: #000 !important;
+	opacity: 1;
+	/* Firefox */
+}
+
+.light :-ms-input-placeholder {
+	/* Internet Explorer 10-11 */
+	color: #000 !important;
+}
+
+.light ::-ms-input-placeholder {
+	/* Microsoft Edge */
+	color: #000 !important;
+}
+
+.dark input {
+	color: #fff !important;
+	border-bottom-color: rgba(255, 255, 255, 0.8);
+}
+
+.dark ::placeholder {
+	/* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: #fff !important;
+	opacity: 1;
+	/* Firefox */
+}
+
+.dark :-ms-input-placeholder {
+	/* Internet Explorer 10-11 */
+	color: #fff !important;
+}
+
+.dark ::-ms-input-placeholder {
+	/* Microsoft Edge */
+	color: #fff !important;
+}
